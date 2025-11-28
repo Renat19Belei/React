@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #e9e9f1; 
+    color: #1a1a1a;
+    min-height: 100vh;
+}
+.main-layout-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white; 
+    
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0; 
+}
+
+
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f0f0f5; 
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.header-profile {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #5d67e0; 
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: color 0.2s;
+}
+
+.header-nav a:hover {
+    color: #3b429d;
+}
+
+
+.app-main-content {
+    flex-grow: 1; 
+    padding: 30px;
+}
+
+
+.info-block {
+    background-color: #d7d7e9; 
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.info-block h2 {
+    font-size: 18px;
+    color: #3b429d;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.info-block ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin: 0;
+    color: #4a4a4a;
+}
+.info-block li {
+    margin-bottom: 5px;
+}
+
+.columns-container {
+    display: flex;
+    gap: 30px;
+}
+
+.backend-column, .frontend-column {
+    flex: 1; 
+    background-color: #f0f0f5; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.backend-column h3, .frontend-column h3 {
+    font-size: 16px;
+    color: #5d67e0; 
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.backend-column .lists-group {
+    display: flex;
+    justify-content: space-around; 
+}
+
+.backend-column ul, .frontend-column ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    color: #4a4a4a;
+}
+
+.backend-column li, .frontend-column li {
+    margin-bottom: 5px;
+}
+
+.app-footer {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+    color: #5d67e0;
+    font-size: 24px; 
+    border-top: 1px solid #eee;
+
+}

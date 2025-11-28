@@ -1,0 +1,126 @@
+.main-content-wrapper {
+    display: flex;
+    gap: 30px;
+    padding: 0 30px; 
+}
+
+.filters-sidebar {
+    width: 250px;
+    flex-shrink: 0;
+    padding: 20px;
+    background-color: #f0f0f5; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    height: fit-content; 
+}
+
+.filter-heading {
+    font-size: 16px;
+    color: #5d67e0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.search-block {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.search-block input {
+    border: none;
+    flex-grow: 1;
+    padding: 5px 10px;
+    outline: none;
+}
+.search-icon, .clear-icon {
+    color: #4a4a4a;
+    cursor: pointer;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #d7d7e9; 
+    color: #4a4a4a;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.tag.active {
+    background-color: #5d67e0; 
+    color: white;
+    font-weight: bold;
+}
+.tag-toggle {
+    width: 8px;
+    height: 8px;
+    background-color: #a4c95f; 
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+
+.likes-filter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.like-filter-btn {
+    background-color: #d7d7e9; 
+    color: #4a4a4a;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: left;
+}
+.like-filter-btn:hover {
+    background-color: #c0c0d9;
+}
+
+.posts-area {
+    flex-grow: 1; 
+}
+
+.post-list-header {
+    font-size: 24px;
+    color: #3b429d;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 20px;
+}
+
+
+.posts-grid.single-post-grid {
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.posts-grid.single-post-grid .post-card {
+    width: 280px; 
+    flex-shrink: 0; 
+}
+
+.posts-area p {
+    color: #666;
+    margin-top: 50px; 
+}
