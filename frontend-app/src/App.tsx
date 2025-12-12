@@ -1,37 +1,23 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'; 
-import Header from './components/Header/header';
-import Main from './components/Main/main';
-import Footer from './components/Footer/footer';
-import HomeContent from './HomeContent'; 
-import PostList from './PostList'; 
+import Layout from './components/layout/Layout';
+import HomePage from './pages/HomePage';
+import PostsPage from './pages/PostsPage';
 
-
-
-const MainLayoutWithRoutes: React.FC = () => {
+const AppRouter: React.FC = () => {
     return (
-        <div className="main-layout-container">
-            <Header />
-            <Main>
-                <Routes>
-                    <Route path="/" element={<HomeContent />} /> 
-                    <Route path="/posts" element={<PostList />} /> 
-                    <Route path="/create" element={<div>Форма створення посту</div>} />
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<HomePage />} />
+                    <Route path="posts" element={<PostsPage />} />
+                    <Route path="create" element={<div>Форма створення посту</div>} />
                     <Route path="*" element={<h1>404 Сторінка не знайдена</h1>} />
-                </Routes>
-            </Main>
-            
-            <Footer />
-        </div>
+                </Route>
+            </Routes>
+        </BrowserRouter>
     );
 };
-
-
-const AppRouter: React.FC = () => (
-    <BrowserRouter>
-        <MainLayoutWithRoutes />
-    </BrowserRouter>
-);
 
 export default AppRouter;

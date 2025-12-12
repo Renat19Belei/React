@@ -13,7 +13,13 @@ export interface Post {
     title: string;
     content: string; 
     description: string;
-    createdAt: string;
+    createdAt: Date; 
     author: User;
-    tag: Tag;
+    tags: Tag[];   
+    likesCount: number;
+}
+
+export interface LikeFilterOption {
+    value: number;
+    label: string;
 }
