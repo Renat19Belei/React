@@ -1,0 +1,26 @@
+.likes-filter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.like-filter-btn {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s;
+    background-color: #d7d7e9; 
+    color: #4a4a4a;
+    text-align: left;
+}
+
+.like-filter-btn:hover {
+    background-color: #c0c0d9;
+}
+
+.like-filter-btn.active {
+    background-color: #5d67e0;
+    color: white;
+}

@@ -1,0 +1,36 @@
+.main-content-wrapper {
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem; 
+    padding: 0 1rem; 
+}
+
+.filters-sidebar {
+    width: 100%;
+    flex-shrink: 0;
+    padding: 2rem;
+    background-color: #f0f0f5; 
+    border-radius: 0.8rem; 
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05);
+    height: auto; 
+}
+
+.filter-heading {
+    font-size: 1.6rem;
+    color: #5d67e0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .main-content-wrapper {
+        flex-direction: row; 
+        gap: 3rem;
+        padding: 0 3rem;
+    }
+
+    .filters-sidebar {
+        width: 25rem; 
+        height: fit-content; 
+    }
+}
